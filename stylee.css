@@ -1,0 +1,249 @@
+/*!imports */
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/open-sans/OpenSans_Condensed-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/open-sans/OpenSans_SemiCondensed-Bold.ttf);
+    font-weight: 700;
+}
+/*!reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*!global */
+:root{
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+--color:rgb(255, 255, 255);
+}
+body{
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: "open-sans";
+}
+h2,h3{
+    font-family: "poppins";
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.contianer{
+    width: 90%;
+    padding: 1.4em;
+    background-color:rgba(214, 208, 208, 0.106);
+    margin:3em auto 1em auto;
+    border-radius: .625em;
+}
+.fix{
+    clear: both;
+}
+/*!body */
+/*?start header */
+header{
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header nav{
+    padding: .7em;
+}
+header nav img{
+    width: 7em;
+}
+.div-img{
+    display: inline-block;
+    width: 50%;
+}
+header nav button{
+    background-color: white;
+    border: none;
+    float: right;
+    width: 40%;
+    padding: .5em;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+header nav button:hover, .button button:hover,.box a button:hover{
+    background-color: #c493ff;
+    transform: scale(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.b-div{
+    text-align: center;
+    padding: 1.7em;
+}
+.paragraph-1{
+    margin-bottom: 1.5em;
+}
+.button button{
+    width: 80%;
+    background-color:var(--Pink);
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    
+}
+header .image-2{
+    margin: 1em auto;
+    width: 90%;
+}
+header .image-2 img{
+    margin-bottom: 3em;
+}
+/*? start main */
+main{
+    background-color:var(--color);
+    text-align: center;
+    margin-top: -1em;
+}
+/* ? sections */
+.f-section img{
+    margin-top: 1em;
+}
+section .img-c{
+    margin-bottom: 3em;
+}
+section .content p{
+    color: var(--Grayish-Blue);
+    margin-bottom: 2em;
+}
+.t-section .content p{
+    margin-bottom: 7em;
+}
+/* ?footer */
+.box{
+    background-color: var(--color);
+    text-align: center;
+    width: 90%;
+    padding: .5em;
+    position: absolute;
+    top: -6em;
+    border-radius: .625em;
+    
+}
+.box p{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: "poppins";
+}
+.box a button{
+    width: 80%;
+    background-color:var(--Pink);
+    color: white;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding: 1em;
+    position: relative;
+}
+footer .logo p{
+    color: white;
+    font-size: 30px;
+    font-family: "poppins";
+    margin-bottom: .5em;
+    margin-top: 1em;
+}
+footer .logo{
+    width: 45%;
+}
+footer a{
+    color: white;
+}
+footer .contact a img{
+     margin-right: 1em;
+}
+footer .contact a:first-child img{
+    width: 5%;
+    height: 10%;
+}
+footer .contact{
+    margin-bottom: 2em;
+}
+footer .contact a p{
+    display: flex;
+    margin-bottom: .6em;
+}
+.logo p i{
+    margin-top: 3em;
+}
+.s-link a p {
+    margin-top: .6em;
+}
+footer .icon,.copyright {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+footer .icon a{
+    padding: .3em;
+    border: .5px solid white;
+    border-radius: 50%;
+}
+footer .copyright{
+    color: white;
+    font-size: 14px;
+}
+
+#colors{
+    margin: 4em auto 1em auto;
+    transform: translate(.4em, -5em);
+    -webkit-transform: translate(.4em, -5em);
+    -moz-transform: translate(.4em, -5em);
+    -ms-transform: translate(.4em, -5em);
+    -o-transform: translate(.4em, -5em);
+}
+#colors span{
+    background-color:#faccff;
+    display: inline-block;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    margin: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#colors span:hover{
+    transform: scale(1.5);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+#colors span:nth-child(2){
+    background-color: #c4fcef;
+}
+#colors span:nth-child(3){
+    background-color: #dcebf1;
+} 
+#colors span:last-child{
+    background-color:rgba(214, 208, 208, 0.106);
+}
